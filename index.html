@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+        <h3>Q1. Difference between “ == “ and “ === “ operators.</h3>
+        <p>Ans: Both are the comparision operators == is used to comapre the value where === is used to compare both value and datatype.</p>
+        <pre>
+            // ==
+            var a = 10
+            var a = "10"
+            console.log(a);
+
+           // ===
+           var a = 10
+           var a = "10"
+           console.log(a);</pre>
+
+        <h3>Q2. What are the differences between var, let and const?</h3>
+              <p> <strong>Var:-</strong>  var is a keyword for creating variable. it can be redeclared and reinitialized.It has a global scope </p>
+              <p> <strong>let:-</strong>  It cannot be redeclared but can be reintialized.It has a block scope.</p>
+              <p><strong>const:-</strong> it cannot be redeclared and cannot be reintialized.It also has a block scope.</p>
+        
+        <h3>Q3.What is hoisting?</h3>
+        <p>Ans:-It is the behavior of javascript to move variables to the top of their scope.
+            It allows us to use variables before its declaration.
+            Let and const cannot be hoisted it will give you reference error.</p>
+            <pre>
+                var a;
+                console.log(a);</pre>
+        
+
+       <h3>Q4.What is a Temporal Dead Zone?</h3>
+          <p>Ans:- 
+            Tdz is the behaviour in javascript that occurs when declaring a variable using let or const keyboard,not with var keyword.A let or const keyword is said to be in TDZ from the strt of the block until the code execution reachs the line where the variable is declared and initalised
+            </p>
+
+        <h3>Q5.What is meant by first class functions</h3>
+        <p>Ans:-    - Assign a function to a variable is first class function. </p>
+        <pre>const myFunc = function(){
+            console.log('Hello World');
+        }
+        myFunc();// Hello World</pre>
+
+
+        <h3>Q6.What are pure functions?</h3>
+        <p>A pure function in JavaScript is a function that returns the same result if the same arguments(input) are passed in the function.</p>
+        <pre>function add(a,b){
+            return a+b;
+        }
+        
+        const result = add(1,2)
+        console.log(result); //3</pre>
+         
+        <h3>Q7. What is execution context</h3>
+        <p>JS engine uses a Call stack and also creates a special environment to handle the execution of
+            the JavaScript code. This environment is known as the Execution Context.</p>
+        <pre> 1. Global Execution Context
+            2. Function Execution context
+            3. Memory Allocation
+            4. Code Execution 
+            5. Call Stack
+           </pre>
+
+
+
+
+</body>
+    <script src="./script.js"></script>
+</html>
